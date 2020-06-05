@@ -45,9 +45,7 @@
     color: white;
     transform: rotateY(180deg);
   }
-  .product_view .modal-dialog{max-width: 800px; width: 100%;}
-  .pre-cost{text-decoration: line-through; color: #a5a5a5;}
-  .space-ten{padding: 10px 0;}
+ 
   
   
   
@@ -61,34 +59,10 @@
   }
   
   
-  .how-section1{
-    margin-top:-15%;
-    padding: 10%;
-  }
-  .how-section1 h4{
-    color: #ffa500;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  .how-section1 .subheading{
-    color: #3931af;
-    font-size: 20px;
-  }
-  .how-section1 .row
-  {
-    margin-top: 10%;
-  }
-  .how-img 
-  {
-    text-align: center;
-  }
-  .how-img img{
-    width: 40%;
-  }
-  
+ 
   
   #grad1 {
     /* height: 200px; */
-    background-color: red; /* For browsers that do not support gradients */
+    /* background-color: red; For browsers that do not support gradients */
     background-image: linear-gradient(#1070be,#fff); /* Standard syntax (must be last) */
   }
