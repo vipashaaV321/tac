@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  profile:Array<any>=[];
+  sid=0;
+  constructor(private route:ActivatedRoute,private service:DataService,private rut:Router) { }
+   ngOnInit() {
+    this.sid=this.route.snapshot.params.sid;
+    console.log("id"+this.sid);
 
-  ngOnInit(): void {
-  }
+    this.service.getuserprofilebyid(this.sid).then(res=>{
+      this.profile=res;
 
+      console.log(res[0].sid);
+      console.log(res)
+    })
+
+}
 }
